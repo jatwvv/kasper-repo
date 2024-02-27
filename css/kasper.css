@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
 }
+*::selection {
+    background-color: #383838;
+    color: #d66c1a;
+}
 :root{
     --main-color: #d66c1a;
     --transparent-color: rgb(143 71 15 / 70%);
