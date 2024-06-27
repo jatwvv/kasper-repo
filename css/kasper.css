@@ -512,7 +512,7 @@ header nav .toggle-menu {
   margin-bottom: 10px;
 }
 .portfolio .imgs-container .box .caption p {
-  color: #8f470f;
+  color: #693f68;
 }
 .portfolio a {
   background-color: var(--main-color);
@@ -543,10 +543,10 @@ header nav .toggle-menu {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 99.5%;
   background-color: #0000008c;
 }
-.video img {
+.video video {
   width: 100%;
 }
 .video .text {
@@ -821,7 +821,7 @@ header nav .toggle-menu {
 }
 .pricing .plans {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
   margin-right: 50px;
   margin-left: 50px;
