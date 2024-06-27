@@ -10,7 +10,7 @@
 }
 :root {
   --main-color: #693f68;
-  --transparent-color: #693f68;
+  --transparent-color: #693f68b0;
   --section-padding: 100px;
 }
 html {
