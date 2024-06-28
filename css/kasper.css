@@ -218,10 +218,32 @@ header nav .toggle-menu {
 /* start landing */
 .landing {
   min-height: 100vh;
-  background-image: url("../images//g.png");
-  background-size: cover;
   background-color: #383838;
   position: relative;
+}
+.slider-container img {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 1.5s;
+  -webkit-transition: opacity 1.5s;
+  -moz-transition: opacity 1.5s;
+  -ms-transition: opacity 1.5s;
+  -o-transition: opacity 1.5s;
+}
+.slider-container img.active {
+  opacity: 1;
+}
+.slider-controls .prev.disabled,
+.slider-controls .next.disabled {
+  background-color: #693f68;
+  cursor: no-drop;
+}
+.slider-controls .indicators ul li.active {
+  background-color: #693f68;
+  color: #fff;
 }
 .landing .overlay {
   position: absolute;
@@ -303,7 +325,7 @@ header nav .toggle-menu {
   color: var(--main-color);
   cursor: pointer;
 }
-.landing .bullets {
+.landing .indicators {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -314,7 +336,10 @@ header nav .toggle-menu {
   display: flex;
   bottom: 30px;
 }
-.landing .bullets li {
+.landing .indicators ul {
+  display: flex;
+}
+.landing .indicators li {
   width: 12px;
   height: 12px;
   border: 1px solid white;
@@ -325,7 +350,7 @@ header nav .toggle-menu {
   -o-border-radius: 50%;
   margin-right: 10px;
 }
-.landing .bullets .active {
+.landing .indicators .active {
   background-color: var(--main-color);
   border-color: var(--main-color);
 }
